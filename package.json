@@ -1,0 +1,35 @@
+{
+    "name": "touch-point-subscriber",
+    "version": "0.0.1",
+    "private": true,
+
+    "main": "./lib/touch-point-subscriber.js",
+    "description": "",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha ./test/touch-point-subscriber-tests.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@leadhubgit.corp.homestore.net/prototypes/touchpointsubscriberapi"
+    },
+    "author": "",
+    "license": "",
+    "dependencies": {
+        "underscore": "*",
+        "node-uuid": "*",
+        "mongodb": "*",
+        "amqp": "*",
+        "moment": "*"      ,
+        "dal-helpers": "git+ssh://git@leadhubgit.corp.homestore.net:production/dalhelpers.git"
+
+    },
+    "devDependencies": {
+        "should": "*",
+        "mocha": "*"   ,
+        "expect.js": "*"
+    },
+    "private": true
+}
