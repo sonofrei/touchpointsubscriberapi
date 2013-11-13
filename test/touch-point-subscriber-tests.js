@@ -75,8 +75,13 @@ describe('Helper Tests:', function () {
                 }
             };
 
-            var result = helper.getQueryTouchpoint  (rules,tp);
 
+            var x = '{"_id":1,"event_type":"completed_tp","type":"ms","sub_type":"ms_viewed", "userId":1,"leadQuality":40, "contact":{"firstName":"Stefan","externalIds":[{"provider":"kws","id":"1"},{"provider":"tiger","id":"2"}]}}';
+
+            var y  = JSON.parse(x);
+            console.log('y%j',y);
+            var result = helper.getQueryTouchpoint  (rules,tp);
+             console.log('%j',result);
             expect(result).to.not.eql(undefined);
             done();
 
